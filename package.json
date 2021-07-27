@@ -1,0 +1,19 @@
+{
+  "name": "fashion",
+  "version": "1.0.0",
+  "description": "Proyecto Fashion X",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ksamueloz/fashionx.git"
+  },
+  "author": "Samuel Ortiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksamueloz/fashionx/issues"
+  },
+  "homepage": "https://github.com/ksamueloz/fashionx#readme"
+}
