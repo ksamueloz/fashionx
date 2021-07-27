@@ -1,15 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>FashionX</title>
 </head>
 
 <body>
-    <h4>Bienvenido, Samuel.</h4>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Barra de navegación -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light border-3 border-bottom bg-light fixed-top" style="border-bottom: 1px solid #6EC5FF !important;">
+            <div class="md-6">
+                <a class="navbar-brand" href="#" data-toggle="tooltip" data-placement="top" title="Página web de venta de ropa">
+                    <img src="./img/Fx-bsw.png" alt="" width="90" height="90" class="d-inline-block align-text-top">
+                </a>
+            </div>
+            <div class="md-6" id="name-logo">
+                FashionX
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-lg-0 ms-5">
+                    <li class="navbar-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="navbar-item"><a class="nav-link" href="#">Catálogo</a></li>
+                    <li class="navbar-item"><a class="nav-link" href="#">Nosotros</a></li>
+                    <li class="navbar-item"><a class="nav-link" href="#">Terminos y condiciones</a></li>
+                    <li class="navbar-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+                <span class="navbar-text ms-5">
+                    <button class="btn btn-outline-success" type="button">Iniciar sesión</button>
+                    <button class="btn btn-outline-success" type="button">Registrate</button>
+                </span>
+            </div>
+        </nav>
+    </div>
+    <section id="wave">
+        <div class="container-fluid p-0">
+            <div class="row justify-content-center align-items-center mx-0">
+                <div class=" col-md-6 ">
+                    <h3 class="mt-5 ">
+                        Tienda de ropa FashionX
+                    </h3>
+                    <p>
+                        Encuentra en este lugar todo lo relacionado con ropa, calzado y demás.
+                    </p>
+                </div>
+                <div class="col-md-6 ">
+                    <img src="./img/web-shoping.svg " class="img-fluid float-right mt-5 ms-5" width="60% " id="img-web" />
+                </div>
+            </div>
+    </section>
+    <!-- Wave -->
+    <div class="container-fluid p-0 wave wave-one ">
+        <svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 1440 320 ">
+            <path fill="#6EC5FF " fill-opacity="1 " d="M0,160L34.3,160C68.6,160,137,160,206,186.7C274.3,213,343,267,411,266.7C480,267,549,213,617,186.7C685.7,160,754,160,823,186.7C891.4,213,960,267,1029,277.3C1097.1,288,1166,256,1234,229.3C1302.9,203,1371,181,1406,170.7L1440,160L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z ">
+            </path>
+        </svg>
+    </div>
+    <!-- Breadcrumb -->
+    <section style="border-bottom: 1px solid #6EC5FF !important;">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- Carousel -->
+    <div id="carousel" class="carousel carousel-light slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="./img/fashion-one.jpg" class="img-fluid d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./img/fashion-two.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./img/sporty-woman.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./img/sporty-man.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Fourth slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section>
+        <div class="container container-fluid">
+            &nbsp;
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background: linear-gradient(100deg, #6EC5FF, #eaf5fc);">
+            © 2021 Copyright:
+            <span>:)</span>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.min.js "></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js "></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

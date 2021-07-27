@@ -1,0 +1,58 @@
+#name-logo {
+    font-family: 'Cursive', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif !important;
+}
+
+section#wave {
+    width: 100%;
+    height: 0%;
+    background: #fff;
+    overflow: hidden;
+    background: linear-gradient(100deg, #6EC5FF, #6EC5FF);
+}
+
+section .container-fluid {
+    margin-top: 12%;
+}
+
+section h3 {
+    font-size: 40px;
+    font-weight: 40px;
+    margin-bottom: 0.8%;
+    color: #2c2c2c;
+}
+
+section p {
+    margin-top: 2%;
+    font-size: 15px;
+    line-height: 80%;
+    color: #2c2c2c;
+}
+
+#img-web:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+.wave {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+}
+
+@media (max-width: 300px) {
+    .wave {
+        display: none;
+    }
+    section {
+        padding: 2rem;
+    }
+}
+
+.carousel-inner>.carousel-item>img {
+    margin: 0 auto;
+    object-fit: scale-down;
+    height: 90vh;
+    max-width: 900px;
+}
