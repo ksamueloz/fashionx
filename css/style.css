@@ -51,8 +51,70 @@ section p {
 }
 
 .carousel-inner>.carousel-item>img {
-    margin: 0 auto;
     object-fit: scale-down;
-    height: 90vh;
-    max-width: 900px;
+    max-width: 100%;
+    max-height: 70vh;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+
+section #popular p,
+section #new-content p {
+    font-size: 5vh;
+}
+
+section div#pills {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.card {
+    flex: 1 150px;
+    padding: 2px 5px 2px 5px;
+    margin: 10px;
+    margin-bottom: 0.5px;
+    display: flex;
+    flex-wrap: wrap !important;
+    width: 100%;
+    flex-shrink: 0;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+
+.card:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+.card-body {
+    padding: 0.9rem;
+    padding-bottom: 5.3rem;
+}
+
+.row-woman,
+.row-man,
+.row-kids {
+    display: block;
+    background-color: azure;
+}
+
+.row-woman.card,
+.row-man.card,
+.row-kids.card {
+    margin: 1%;
+}
+
+.card-img,
+.card-img-top {
+    width: 80% !important;
+    margin: 0 auto;
+}
+
+#pills {
+    border-top: 1px solid #6EC5FF;
+    margin-bottom: 10%;
+}
+
+#pills-tab {
+    margin-top: 1%;
 }
