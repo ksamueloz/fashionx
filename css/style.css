@@ -41,8 +41,9 @@ section p {
     height: 50vh;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 360px) {
     .wave {
+        margin-top: 3%;
         display: none;
     }
     section {
@@ -59,7 +60,8 @@ section p {
 }
 
 section #popular p,
-section #new-content p {
+section #new-content p,
+section #who p {
     font-size: 5vh;
 }
 
@@ -79,11 +81,17 @@ section div#pills {
     flex-shrink: 0;
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid #6EC5FF;
+    /*transition: 0.3s;*/
 }
 
 .card:hover {
     transform: scale(1.03);
     transition: 0.5s;
+    /*transform: rotate(-10deg) skew(15deg);*/
 }
 
 .card-body {
@@ -117,4 +125,48 @@ section div#pills {
 
 #pills-tab {
     margin-top: 1%;
+}
+
+#pills {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#pills img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+section .msg {
+    border-top: 1px solid #6EC5FF;
+}
+
+section .msg img {
+    width: 50%;
+    height: 60%;
+    padding-top: 2%;
+    position: relative;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+section .msg img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+section .msg p {
+    margin: 0 auto;
+    margin-top: 3%;
+    position: absolute;
+    padding-top: 5%;
+    font-family: 'Cursive' !important;
 }
