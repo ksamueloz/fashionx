@@ -2,7 +2,7 @@
     font-family: 'Cursive', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif !important;
 }
 
-section#wave {
+section.wave {
     width: 100%;
     height: 0%;
     background: #fff;
@@ -49,6 +49,10 @@ section p {
     section {
         padding: 2rem;
     }
+    section .msg img {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .carousel-inner>.carousel-item>img {
@@ -57,6 +61,8 @@ section p {
     max-height: 70vh;
     margin: 0 auto;
     background-color: aliceblue;
+    width: 400px;
+    height: 400px;
 }
 
 section #popular p,
@@ -169,4 +175,63 @@ section .msg p {
     position: absolute;
     padding-top: 5%;
     font-family: 'Cursive' !important;
+}
+
+button.btn.btn-outline-success>a {
+    width: 100%;
+    height: 100%;
+}
+
+button.btn.btn-outline-success>a:hover {
+    color: white;
+}
+
+#title-p,
+.title p {
+    font-family: 'Cursive', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif !important;
+    font-size: -webkit-xxx-large;
+    color: #2c2c2c;
+}
+
+#form-log-in label,
+#form-log-in a,
+#form-log-in input {
+    font-size: x-large;
+    color: #2c2c2c;
+}
+
+section div a {
+    text-decoration: none;
+    font-size: 4vh;
+}
+
+section div a:hover {
+    color: #6EC5FF;
+}
+
+#log-in-img {
+    width: 100%;
+    height: 100%;
+    padding-top: 11%;
+}
+
+#div-log-in {
+    margin-top: -8%;
+}
+
+#div-log-in #wave-log-in {
+    background: #fff;
+    overflow: hidden;
+    background: linear-gradient(100deg, #6EC5FF, #6EC5FF);
+}
+
+@media (max-width: 400px) {
+    #wave-log-in {
+        margin-top: -5%;
+    }
+}
+
+#form-log-in .btn {
+    width: 100%;
+    height: 100%;
 }
